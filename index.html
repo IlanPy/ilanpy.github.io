@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ilan Sela</title>
+  <meta name="description" content="Ilan Sela is an M.S. student at Texas A&amp;M University working on generative models and agents for automated discovery.">
+  <meta property="og:title" content="Ilan Sela">
+  <meta property="og:description" content="M.S. student at Texas A&amp;M University working on generative models and agents for automated discovery.">
+  <meta property="og:url" content="https://ilanpy.github.io/">
+  <link rel="canonical" href="https://ilanpy.github.io/">
+  <link rel="icon" href="assets/favicon.ico?v=2" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="research-animations.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="assets/Ilan_Sela_CV.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+
+    <section id="about" class="profile">
+      <div class="profile-bio">
+        <h1 class="name">Ilan Sela</h1>
+        <p class="tagline">M.S. student in Computer Engineering, <span class="nowrap">Texas A&amp;M University</span></p>
+
+        <p>
+          I am advised by Prof. <a href="https://engineering.tamu.edu/electrical/profiles/tliu.html">Tie Liu</a>,
+          and my master's thesis studies the training dynamics of one-step generative models.
+          I also build agents for automated discovery.
+        </p>
+        <p>
+          I came to generative models through probability. At heart, a generative model is a learned
+          probability distribution, and figuring out how training gets it there is the kind of puzzle I enjoy.
+          <strong>I am applying to Ph.D. programs for Fall 2027.</strong>
+        </p>
+        <p>
+          I obtained my B.S. in Electrical Engineering, with a minor in Computer Science, from Texas A&amp;M,
+          where I wrote my undergraduate thesis with Prof. Tie Liu and briefly worked with the SETH Lab.
+        </p>
+
+        <p class="links">
+          <a href="mailto:isela1@tamu.edu">Email</a> &middot;
+          <a href="assets/Ilan_Sela_CV.pdf">CV</a> &middot;
+          <a href="https://github.com/IlanPy">GitHub</a> &middot;
+          <a href="https://www.linkedin.com/in/ilan-sela/">LinkedIn</a>
+        </p>
+      </div>
+      <div class="profile-image">
+        <!-- Square photo at assets/profile.jpg (any size >= 400x400) -->
+        <img src="assets/profile.jpg" alt="Ilan Sela" onerror="this.parentElement.style.display='none'">
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="dated">
+        <li>
+          <span class="date">May 2026</span>
+          <span>Our work on reinforcement-learning-based radar self-calibration was accepted for presentation at the 2026 MKO Safety &amp; Risk Conference.</span>
+        </li>
+        <li>
+          <span class="date">Aug 2025</span>
+          <span>Started my M.S. at Texas A&amp;M, with a Qualcomm Graduate Scholarship.</span>
+        </li>
+        <li>
+          <span class="date">May 2025</span>
+          <span>Graduated summa cum laude with a B.S. in Electrical Engineering.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <!-- Each item can take an optional figure at the img path; it hides itself if missing. -->
+      <article class="item item-agentdiscover" aria-labelledby="agentdiscover-title">
+        <div class="thumb agentdiscover-visual">
+          <svg viewBox="0 0 360 225" aria-hidden="true" focusable="false">
+            <rect class="ad-bg" x="1" y="1" width="358" height="223" rx="10" />
+
+            <g class="ad-agent">
+              <rect class="ad-agent-shell" x="18" y="72" width="82" height="81" rx="9" />
+              <path class="ad-agent-antenna" d="M59 89V83" />
+              <circle class="ad-agent-signal" cx="59" cy="80" r="2.5" />
+              <rect class="ad-agent-head" x="39" y="89" width="40" height="29" rx="9" />
+              <circle class="ad-agent-eye" cx="51" cy="102" r="3" />
+              <circle class="ad-agent-eye" cx="67" cy="102" r="3" />
+              <path class="ad-agent-mouth" d="M52 110h14" />
+              <path class="ad-agent-shoulders" d="M35 130c4-8 12-12 24-12s20 4 24 12" />
+              <circle class="ad-agent-spark" cx="32" cy="91" r="2" />
+              <path class="ad-agent-spark-line" d="m27 84-4-4m8 3 1-6" />
+              <text class="ad-label" x="59" y="145" text-anchor="middle">SEARCH AGENT</text>
+            </g>
+
+            <path class="ad-query-track" d="M100 112 C121 112 126 76 150 76" />
+            <path class="ad-query-pulse" d="M100 112 C121 112 126 76 150 76" />
+
+            <g class="ad-memory">
+              <text class="ad-memory-label" x="244" y="28" text-anchor="middle">LONG-TERM MEMORY</text>
+
+              <path class="ad-edge" d="M150 76 197 51M150 76 201 99M197 51 249 65M201 99 249 65M201 99 260 119M249 65 309 47M249 65 313 89M260 119 312 145M260 119 312 185" />
+              <path class="ad-winning-edge" d="M150 76 201 99 260 119 312 145" />
+
+              <rect class="ad-idea" x="143" y="69" width="14" height="14" rx="3" />
+              <rect class="ad-idea" x="190" y="40" width="14" height="14" rx="3" />
+              <rect class="ad-idea" x="242" y="58" width="14" height="14" rx="3" />
+              <rect class="ad-idea" x="302" y="40" width="14" height="14" rx="3" />
+
+              <circle class="ad-candidate" cx="201" cy="99" r="8" />
+              <circle class="ad-candidate" cx="260" cy="119" r="8" />
+              <circle class="ad-candidate" cx="313" cy="89" r="8" />
+              <circle class="ad-candidate" cx="312" cy="185" r="8" />
+
+              <g class="ad-new-candidate">
+                <circle class="ad-candidate-halo" cx="312" cy="145" r="14" />
+                <circle class="ad-candidate ad-candidate-best" cx="312" cy="145" r="9" />
+              </g>
+            </g>
+
+            <g class="ad-score-card">
+              <text class="ad-score-caption" x="183" y="175">BEST SCORE</text>
+              <text class="ad-score-old" x="183" y="199">1.91</text>
+              <text class="ad-score-new" x="183" y="199">1.97</text>
+              <path class="ad-score-arrow" d="M238 194h17m0 0-6-6m6 6-6 6" />
+            </g>
+          </svg>
+        </div>
+        <div class="item-body">
+          <p class="venue">Preprint &middot; Under review</p>
+          <h3 class="item-title" id="agentdiscover-title">AgentDiscover: Autonomous Discovery with Minimal Search Scaffolding</h3>
+          <p class="authors">Mahdi Farahbakhsh, <strong>Ilan Sela</strong>, Fatemeh Doudi, Vishnu Teja Kunde, Krishna Narayanan, Jean&#8209;Francois Chamberland, Dileep Kalathil</p>
+          <p class="tldr">An agentic framework for automated scientific discovery that relies on minimal hand-designed search scaffolding.</p>
+          <p class="item-links">
+            <a href="https://mhdfb.github.io/AgentDiscover/">Project</a>
+            <a href="https://github.com/mhdfb/AgentDiscover">Code</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="item item-radar" aria-labelledby="radar-title">
+        <div class="thumb radar-visual">
+          <svg viewBox="0 0 360 225" aria-hidden="true" focusable="false">
+            <rect class="rd-bg" x="1" y="1" width="358" height="223" rx="10" />
+
+            <g class="rd-controls">
+              <rect class="rd-panel" x="16" y="32" width="80" height="153" rx="8" />
+              <text class="rd-label" x="56" y="52" text-anchor="middle">CALIBRATION</text>
+
+              <text class="rd-symbol" x="29" y="84">A</text>
+              <path class="rd-slider" d="M48 79h34M48 91h34M48 103h34" />
+              <g class="rd-amplitude-knobs">
+                <circle class="rd-knob" cx="68" cy="79" r="4" />
+                <circle class="rd-knob" cx="57" cy="91" r="4" />
+                <circle class="rd-knob" cx="73" cy="103" r="4" />
+              </g>
+
+              <text class="rd-symbol" x="27" y="139">φ</text>
+              <path class="rd-slider" d="M48 134h34M48 146h34M48 158h34" />
+              <g class="rd-phase-knobs">
+                <circle class="rd-knob" cx="58" cy="134" r="4" />
+                <circle class="rd-knob" cx="72" cy="146" r="4" />
+                <circle class="rd-knob" cx="63" cy="158" r="4" />
+              </g>
+            </g>
+
+            <path class="rd-action-track" d="M96 109h18" />
+            <path class="rd-action-pulse" d="M96 109h18" />
+            <path class="rd-action-arrow" d="m108 103 6 6-6 6" />
+
+            <g class="rd-reconstruction">
+              <text class="rd-label" x="227" y="24" text-anchor="middle">RECONSTRUCTED IMAGE</text>
+              <rect class="rd-screen" x="114" y="32" width="227" height="142" rx="7" />
+
+              <g class="rd-final-image">
+                <rect class="rd-target" x="143" y="69" width="170" height="76" rx="5" />
+                <path class="rd-target-detail" d="M153 79h150M153 91h150M153 103h150M153 115h150M153 127h150M171 73v68M200 73v68M229 73v68M258 73v68M287 73v68" />
+                <circle class="rd-target-hole" cx="168" cy="88" r="8" />
+                <circle class="rd-target-hole" cx="286" cy="89" r="10" />
+                <circle class="rd-target-hole" cx="184" cy="126" r="7" />
+                <circle class="rd-target-hole" cx="273" cy="126" r="7" />
+              </g>
+
+              <g class="rd-initial-image">
+                <rect class="rd-blurred-target" x="139" y="65" width="178" height="84" rx="5" />
+                <path class="rd-stripes" d="M150 57v100M165 51v112M181 55v104M197 48v118M214 54v106M231 49v116M248 54v106M265 50v113M282 56v102M299 51v111" />
+              </g>
+            </g>
+
+            <g class="rd-score" transform="translate(0 8)">
+              <text class="rd-score-label" x="115" y="203">−TV</text>
+              <path class="rd-score-axis" d="M143 199h113" />
+              <path class="rd-score-rise" d="M146 198 178 195 211 186 253 181" />
+              <circle class="rd-score-dot" cx="253" cy="181" r="4" />
+            </g>
+
+            <g class="rd-stop">
+              <circle class="rd-stop-halo" cx="312" cy="196" r="18" />
+              <circle class="rd-stop-ring" cx="312" cy="196" r="12" />
+              <rect class="rd-stop-square" x="308" y="192" width="8" height="8" rx="1" />
+              <text class="rd-stop-label" x="312" y="219" text-anchor="middle">STOP</text>
+            </g>
+          </svg>
+        </div>
+        <div class="item-body">
+          <p class="venue">MKO Safety &amp; Risk Conference 2026</p>
+          <h3 class="item-title" id="radar-title">A Reinforcement Learning-Based Self-Calibration Framework for Radar Systems in Offshore Crane Applications</h3>
+          <p class="authors">Sumin Kim, <strong>Ilan Sela</strong>, Muhammad Faeyz Karim</p>
+          <p class="tldr">Offline reinforcement learning that calibrates MIMO radar without specialized measurement equipment, by rewarding image quality.</p>
+        </div>
+      </article>
+
+      <article class="item item-thesis" aria-labelledby="thesis-title">
+        <a class="thumb thesis-visual" href="https://hdl.handle.net/1969.1/1591266" aria-label="Black-Box Offline Optimization via Large Language Models thesis">
+          <svg viewBox="0 0 360 225" aria-hidden="true" focusable="false">
+            <rect class="bb-bg" x="1" y="1" width="358" height="223" rx="10" />
+
+            <g class="bb-context">
+              <text class="bb-heading" x="79" y="27" text-anchor="middle">RANKED OFFLINE CONTEXT</text>
+              <rect class="bb-context-panel" x="15" y="38" width="128" height="139" rx="8" />
+
+              <g class="bb-context-row bb-context-row-1">
+                <text class="bb-rank" x="27" y="65">1</text>
+                <g class="bb-vector">
+                  <rect x="42" y="51" width="12" height="17" rx="2" /><rect x="57" y="51" width="12" height="17" rx="2" />
+                  <rect x="72" y="51" width="12" height="17" rx="2" /><rect x="87" y="51" width="12" height="17" rx="2" />
+                </g>
+                <text class="bb-score" x="128" y="64" text-anchor="end">0.21</text>
+              </g>
+              <g class="bb-context-row bb-context-row-2">
+                <text class="bb-rank" x="27" y="99">2</text>
+                <g class="bb-vector">
+                  <rect x="42" y="85" width="12" height="17" rx="2" /><rect x="57" y="85" width="12" height="17" rx="2" />
+                  <rect x="72" y="85" width="12" height="17" rx="2" /><rect x="87" y="85" width="12" height="17" rx="2" />
+                </g>
+                <text class="bb-score" x="128" y="98" text-anchor="end">0.34</text>
+              </g>
+              <g class="bb-context-row bb-context-row-3">
+                <text class="bb-rank" x="27" y="133">3</text>
+                <g class="bb-vector">
+                  <rect x="42" y="119" width="12" height="17" rx="2" /><rect x="57" y="119" width="12" height="17" rx="2" />
+                  <rect x="72" y="119" width="12" height="17" rx="2" /><rect x="87" y="119" width="12" height="17" rx="2" />
+                </g>
+                <text class="bb-score" x="128" y="132" text-anchor="end">0.44</text>
+              </g>
+              <path class="bb-rank-arrow" d="M28 155h91m0 0-6-5m6 5-6 5" />
+              <text class="bb-rank-label" x="73" y="169" text-anchor="middle">INCREASING SCORE</text>
+            </g>
+
+            <path class="bb-flow-track" d="M143 108h19M218 108h17" />
+            <path class="bb-flow-arrow" d="m157 102 6 6-6 6m72-12 6 6-6 6" />
+            <path class="bb-flow-pulse" d="M143 108h19M218 108h17" />
+
+            <g class="bb-model">
+              <rect class="bb-model-shell" x="163" y="65" width="55" height="86" rx="8" />
+              <text class="bb-model-label" x="190.5" y="83" text-anchor="middle">FINE-TUNED</text>
+              <path class="bb-model-layer" d="M175 96h31M175 106h31M175 116h31M175 126h31" />
+              <circle class="bb-model-node" cx="181" cy="96" r="2.5" /><circle class="bb-model-node" cx="199" cy="106" r="2.5" />
+              <circle class="bb-model-node" cx="184" cy="116" r="2.5" /><circle class="bb-model-node" cx="202" cy="126" r="2.5" />
+              <text class="bb-model-name" x="190.5" y="142" text-anchor="middle">LLM</text>
+            </g>
+
+            <g class="bb-output">
+              <text class="bb-heading bb-output-heading" x="289" y="27" text-anchor="middle">GENERATED DESIGN</text>
+              <rect class="bb-output-card" x="236" y="38" width="108" height="139" rx="8" />
+              <g class="bb-output-vector">
+                <rect x="247" y="55" width="12" height="22" rx="2" /><rect x="262" y="55" width="12" height="22" rx="2" />
+                <rect x="277" y="55" width="12" height="22" rx="2" /><rect x="292" y="55" width="12" height="22" rx="2" />
+                <rect x="307" y="55" width="12" height="22" rx="2" /><rect x="322" y="55" width="12" height="22" rx="2" />
+              </g>
+              <g class="bb-comparison">
+                <text class="bb-score-caption" x="290" y="99" text-anchor="middle">GENERATED SCORE</text>
+                <text class="bb-output-score" x="290" y="128" text-anchor="middle">0.66</text>
+                <path class="bb-threshold-rule" d="M247 141h86" />
+                <text class="bb-best-label" x="247" y="161">OFFLINE BEST</text>
+                <text class="bb-best-score" x="333" y="161" text-anchor="end">0.44</text>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <div class="item-body">
+          <p class="venue">Undergraduate Thesis &middot; 2025</p>
+          <h3 class="item-title" id="thesis-title"><a href="https://hdl.handle.net/1969.1/1591266">Black-Box Offline Optimization via Large Language Models</a></h3>
+          <p class="authors"><strong>Ilan Sela</strong>; advised by Tie Liu</p>
+          <p class="tldr">Fine-tuning LLMs to propose high-scoring designs from a fixed offline dataset.</p>
+          <p class="item-links">
+            <a href="https://hdl.handle.net/1969.1/1591266">Thesis</a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <h3 class="group">Research</h3>
+      <ul class="dated">
+        <li>
+          <span class="date">2025&ndash;now</span>
+          <span><strong>Graduate Researcher</strong>, Texas A&amp;M, with Prof. Tie Liu.
+            Training dynamics of one-step generative models.</span>
+        </li>
+        <li>
+          <span class="date">2026</span>
+          <span><strong>Graduate Researcher</strong>, Texas A&amp;M, with Prof. Dileep Kalathil.
+            Agents for automated discovery (AgentDiscover).</span>
+        </li>
+      </ul>
+
+      <h3 class="group">Industry</h3>
+      <ul class="dated">
+        <li>
+          <span class="date">2025</span>
+          <span><strong>Embedded Software Intern</strong>, Luminator Technology Group.</span>
+        </li>
+      </ul>
+
+      <h3 class="group">Teaching</h3>
+      <ul class="dated">
+        <li>
+          <span class="date">2026</span>
+          <span><strong>Mentor</strong>, Agentic Intelligence for Discovery and Exploration (AIDE) Workshop.</span>
+        </li>
+        <li>
+          <span class="date">2025</span>
+          <span><strong>Student Assistant</strong>, ECEN 740: Machine Learning Engineering.</span>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      Last updated October 2026.
+    </footer>
+
+  </main>
+
+  <script>
+    // Highlight the nav link for the section in view, and show a rule under the bar once scrolled.
+    const bar = document.querySelector('.topbar');
+    const links = [...document.querySelectorAll('.topbar nav a[href^="#"]')];
+    const sections = links.map(a => document.querySelector(a.getAttribute('href')));
+
+    function update() {
+      bar.classList.toggle('scrolled', window.scrollY > 8);
+      const y = window.scrollY + window.innerHeight * 0.35;
+      let current = sections[0];
+      for (const s of sections) if (s.offsetTop <= y) current = s;
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) current = sections[sections.length - 1];
+      links.forEach((a, i) => a.classList.toggle('active', sections[i] === current));
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+
+    // On touch devices, play each research illustration once as it comes into view.
+    const touchPointer = window.matchMedia('(hover: none), (pointer: coarse)');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const researchItems = document.querySelectorAll('.item-agentdiscover, .item-radar, .item-thesis');
+
+    if (touchPointer.matches && !reducedMotion.matches && 'IntersectionObserver' in window) {
+      const playAnimation = item => {
+        item.classList.remove('is-animating');
+        requestAnimationFrame(() => requestAnimationFrame(() => item.classList.add('is-animating')));
+      };
+
+      const observer = new IntersectionObserver(entries => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            playAnimation(entry.target);
+            observer.unobserve(entry.target);
+          }
+        }
+      }, { threshold: 0.45 });
+
+      researchItems.forEach(item => {
+        observer.observe(item);
+        item.addEventListener('click', event => {
+          if (!event.target.closest('a')) playAnimation(item);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
